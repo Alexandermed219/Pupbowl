@@ -1,0 +1,163 @@
+html {
+  background-image: url(dog-wallpaper.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+}
+
+/* *{
+    padding: 0;reset
+
+    margin: 0;
+    box-sizing: border-box;
+  } */
+#all-players-container {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 20px;
+  border: 10px outset #c37f36;
+  flex-wrap: wrap
+  
+}
+  .flip-card {
+    background-color: transparent;
+    width: 300px;
+    height: 300px;
+    perspective: 1000px;
+    float: left;
+    padding: 20px;
+    
+  
+  }
+  
+  .flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    text-align: center;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    border: outset 10px #e69b00;
+
+  }
+  
+  .flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+  }
+  
+  .flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+  }
+  
+  .flip-card-front {
+    background-color: #bbb;
+    color: black;
+  }
+  
+  .flip-card-back {
+    background-image: url(card-back.jpg);
+    color: #FBE106;
+    transform: rotateY(180deg);
+  }
+
+  /* .button{
+    background-color: #643B9F;
+    padding: 10px 20px;
+  } */
+  #new-player-form{
+    width: 300px;
+    height: 350px;
+    background-color:#916b44;
+    float: left;
+    color:purple;
+    justify-content: center;
+    text-align: center;
+    border: 10px outset gray;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+  }
+  .container{
+    position: relative;
+  }
+  
+  #space{
+    padding-bottom: .7rem;
+  }
+  h1{
+    color: #e69b00;
+  }
+  .col-1 {
+    float: left;
+    width: 40%;
+    margin-top: 6px;
+    font-size: larger;
+    
+  }
+  
+  .col-2 {
+    float: left;
+    width:  80%;
+    margin-top: 6px;
+    padding-bottom: .7rem;
+    
+
+  }
+  .row::after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  .submit{
+    display: flex;
+    background-color: #e9cbb0;
+    padding: 10px 20px;
+    align-items: center;
+    margin-left: 28%;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 15px;
+  }
+  
+  input[type=text], select, textarea {
+    width: 254px;
+  }
+  .headerName{
+    font-size: 60px;
+    text-align: center;
+    margin: 0px 0px;
+    color:#643B9F;
+   border-bottom:3px solid #643B9F;
+   font-weight:bold;
+   text-decoration-line: underline;
+  }
+
+  #registry {
+    font-size: 50px;
+    color: purple;
+    text-decoration-line: underline;
+  }
+  #pupsmall {
+    display: flex;
+    align-items: center;
+    width: 600px;
+    height: 300px;
+    border-radius: 30px;
+    border: solid 20px #c37f36;
+    margin-top: 40px;
+  }
+  #pup-container {
+    display: flex;
+    justify-content: center;
+  }
+  #pup-roster{
+    display: flex;
+    justify-content: center;
+  }
